@@ -23,7 +23,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build 9anime extension APK
-        run: ./gradlew :src:en:nineanime:assembleRelease
+        run: ./gradlew :src:all:nineanime:assembleRelease
 
       - name: Upload APK as artifact
         uses: actions/upload-artifact@v4
