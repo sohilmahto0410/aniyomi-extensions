@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name=".en.nineanime.NineAnimeUrlActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Official domain -->
+                <data android:scheme="https" android:host="9animetv.to" android:pathPattern="/watch/..*" />
+                <data android:scheme="https" android:host="www.9animetv.to" android:pathPattern="/watch/..*" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
